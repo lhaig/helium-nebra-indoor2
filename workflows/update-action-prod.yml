@@ -5,12 +5,12 @@ on:
     - cron:  "0 0 * * *" # Run daily at midnight
   workflow_dispatch:
 
-permissions: 
+permissions:
   contents: write
 
 env:
-  fleet: replace/with-your-fleet-slug
-  
+  fleet: lnhaig_balena/helium-rockpi
+
 jobs:
   build-prod:
     runs-on: ubuntu-latest
